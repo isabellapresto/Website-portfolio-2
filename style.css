@@ -1,0 +1,344 @@
+* {
+ margin: 0;
+ padding: 0;
+ font-family: 'Poppins', sans-serif; 
+}
+
+/* Hi! */
+body{
+ background: #080808;
+ color: white;
+}
+
+#header{
+ width: 100%;
+ height: 100vh;
+}
+
+.container{
+ padding: 10px 10%;
+}
+
+nav{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+
+.logo{
+ width: 140px;
+ font-size: 40px;
+ font-weight: bold;
+}
+
+.logo::first-letter{
+ color: #ff004f;
+}
+
+nav ul li {
+ display: inline-block;
+ list-style: none;
+ margin: 10px 20px
+}
+
+nav ul li a {
+ color: #fff;
+ text-decoration: none;
+ font-size: 18px;
+ position: relative;
+}
+
+nav ul li a::after{
+ content: '';
+ width: 0;
+ height: 3px;
+ background: #ff004f;
+ position: absolute;
+ left: 0;
+ bottom: -6px;
+ transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+ width: 100%;
+}
+
+.header-text{ 
+ margin-top: 20%;
+ font-size: 30px;
+}
+
+.header-text h1{
+ margin-top: 20px;
+ font-size: 70px;
+}
+
+.header-text h1 span{
+ color: #ff004f;
+}
+
+.btn {
+ display: block;
+ margin-top: 25px;
+ width: fit-content;
+ border: 1px solid  #ff004f;
+ padding: 10px; 
+ border-radius: 15px;
+ text-decoration: none;
+ color: white;
+ transition: 0.5s ;
+ font-size: 20px;
+}
+
+.btn:hover{
+ background: #ff004f;
+}
+
+/* about */
+#about{
+ padding: 80px 0;
+ color: #ababab;
+}
+
+.row{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+
+.about-col-1{
+ width: 35%;
+}
+
+.about-col-1 img{
+ width: 100%;
+ border-radius: 15px;
+}
+
+.about-col-2{
+ width: 60%;
+}
+
+.sub-title{
+ font-size: 60px;
+ font-weight: 600;
+ color: #ffffff;
+}
+
+.tab-titles{
+ display: flex;
+ margin: 20px 0 40px;
+}
+
+.reslink {
+ color: white;
+ text-decoration: none; 
+}
+
+.tab-links{
+ margin-right: 50px;
+ font-size: 22px;
+ font-weight: 500;
+ cursor: pointer;
+ position: relative;
+ color: white;
+}
+
+.tab-links::after{
+ content:'';
+ width: 0;
+ height: 3px;
+ background: #ff004f;
+ position: absolute;
+ left: 0;
+ bottom: -8px;
+ transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+ width: 50%;
+}
+
+.tab-contents ul li{
+ list-style: none;
+ margin: 10px 0;
+ font-size: 14px;
+}
+
+.aboutcontent{
+ font-size: 16px;
+}
+
+.tab-contents ul li span{ 
+ color:#b54769;
+ font-size: 14px;
+}
+
+.tab-contents {
+  display: none; 
+}
+
+.tab-contents.active-tab {
+display: block;
+}
+
+.img{
+ width: 100px;
+}
+  
+/* projects */
+.sub-section-alternative {
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ padding: 80px;
+}
+   
+.sub-title.myprojects{
+ padding: 10px 10%;
+}
+
+.project-container {
+ display: flex;
+ justify-content: space-around;
+ padding: 10px 10%;
+}
+   
+.project-card {
+ width: 300px;
+ height: 500px;
+ box-shadow: 5px 5px 20px rgb(197, 195, 195);
+ margin: 10px;
+ border-radius: 15px;
+ padding: 10px;
+}
+
+.project-image{
+border-radius: 15px;
+margin-top: 25px;
+width: 250px;
+}
+
+hr {
+ margin-left: 20px;
+ margin-right: 20px;
+}
+   
+.project-link {
+ text-decoration: none;
+ color:#b54769;
+}
+
+a {
+ text-decoration: none;
+ color: white;
+}
+
+/* contact */
+.contact-container{
+ display: flex;
+ padding: 10px 10%;
+ align-items: center;
+ justify-content: center;
+}
+
+.contact-left p{
+ font-size: 20px;
+}
+
+.contact-left p i{
+ color: #ff004f;
+ margin-right: 15px;
+ font-size: 20px;
+}
+
+.contact-info{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.social-icons{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: row;
+}
+
+.social-icons a {
+ text-decoration: none;
+ font-size: 30px;
+ margin-right: 15px;
+ color: #ababab;
+ display: inline-block;
+ transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+ color: #ff004f;
+ transform: translateY(-5px);
+}
+
+/* responsive for small screens*/
+nav .fa-solid {
+  display: none;
+}
+
+@media only screen and (max-width: 600px){
+  .header-text{
+    margin-top: 100%;
+    font-size: 16px;
+  }
+
+  .header-text h1{
+    font-size: 30px;
+  }
+
+  nav .fa-solid{
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul {
+    background: #ff004f;
+    position:fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 25px; 
+  }
+
+  nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer
+
+  }
+
+ 
+
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .project-container {
+   display: flex;
+   flex-wrap: wrap;
+   }
+ }
+    
+/* rosa #F08080; */
+/* röd #ff004f; */
+
