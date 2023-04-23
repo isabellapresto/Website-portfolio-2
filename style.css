@@ -184,7 +184,7 @@ display: block;
 }
 
 .img{
- width: 100px;
+ /* width: 100px; */
 }
   
 /* projects */
@@ -192,7 +192,7 @@ display: block;
  display: flex;
  flex-direction: column;
  text-align: center;
- padding: 80px;
+ padding: 70px;
 }
    
 .sub-title.myprojects{
@@ -289,16 +289,16 @@ nav .fa-solid {
 @media only screen and (max-width: 600px){
   .header-text{
     margin-top: 100%;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .header-text h1{
-    font-size: 30px;
+    font-size: 34px;
   }
 
   nav .fa-solid{
     display: block;
-    font-size: 25px;
+    font-size: 30px;
   }
 
   nav ul {
@@ -323,9 +323,19 @@ nav .fa-solid {
     top: 25px;
     left: 25px;
     cursor: pointer
-
   }
 
+  .sub-title{
+    font-size: 44px;
+  }
+
+  .about-col-1, .about-col-2{
+    flex-basis: 100%;
+  }
+
+  .about-col-1{
+    margin-bottom: 30px;
+  }
  
 
 
