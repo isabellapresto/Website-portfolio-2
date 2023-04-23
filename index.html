@@ -7,24 +7,24 @@
  <link rel="stylesheet" href="style.css">
  <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');</style>
  <script src="https://kit.fontawesome.com/97b07af39f.js" crossorigin="anonymous"></script>
-<script src="script.js" refer></script>
+<script src="script.js" defer></script>
  <title>Portfolio</title>
 </head>
 <body>
 
 <!-- Hi! -->  
-<div id="header">
+<div id="header" id="home">
 
 <div class="container">
 
   <nav>
     <p class="logo">isabella.</p>
     <ul id="sidemenu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Resume</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about-me">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="https://drive.google.com/file/d/1MuR5U5IheHODfoFMw21SV4gsaj3ptp1v/view?usp=sharing">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
       <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
     </ul>
     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -33,30 +33,58 @@
   <div class="header-text">
     <h1>Hi, I'm<span> Isabella</span> Presto<br></h1>
     <p>Web Developer Student</p>
-    <a href="#" class="btn">About me</a>
+    <a href="#about-me" class="btn">About me</a>
   </div>
 
 </div>
 </div>
 
+<!-- <section class="sub-section" id="about-me">
+  <div class="information">
+      <h2>About Me</h2>
+   <p>I'm Isabella, a driven web developer student who likes new challenges. In my education
+    at Medieinstitutet so far I have learned about and worked with HTML, CSS, Javascript, Typescript, 
+    Node.js, Express, php development for wordpress etc. In my next course I will be learning about React which
+    I'm very excited about. I like both front and back end development but am leaning a bit more towards front end. 
+    I'm looking for an internship where I can apply what I have learned during my education so far, learn more about 
+    web development and grow.
+    As a person, I'm loyal, creative, open-minded and like to learn new things. In my free time, I love to do yoga. I'm a certified yoga teacher and have created a deck of yoga cards that are used as a learning format for yoga students. Today we sell the cards online to studios and yoga students worldwide.
+    It was in the process of creating the cards and the online store that I got interested in web development.
+    Previously, I ran my own business as a hairdresser and worked in customer service.
+    I'm based in Barcelona but open to work remotely worldwide. I'm feeling excited about this new chapter in my life and what this new career can bring!
+    </p>
+       
+        Feel free to contact me if you have any recommendation or internship offer!</p>
+        <div class="button"><a class="reslink" target="_blank" href="https://www.cv-mallen.se/online-cv/ieszcvfpqclt/ieszcvfpqclt/">My Resume</a></div>
+
+        
+  </div>
+  <div class="headshot-container">
+      <img class="headshot" src= "src/images/Profile pic.png" alt="Isabella profile"/>
+  </div>
+</section> -->
+
 <!-- About -->
-<div id="about">
+
+
+
+<div id="about-me">
 
   <div class="container">
     
     <div class="row">
       
       <div class="about-col-1">
-        <img src="img/IMG_3586 3.jpeg" alt="profilePic">
+        <img src="img/IMG_3586 2.jpeg" alt="profilePic">
       </div>
       
       <div class="about-col-2">
         <h1 class="sub-title">About me</h1>
         <p class="aboutcontent">I am a driven web developer student studying the program <strong>Web developer in e-commerce</strong> at Medieinstitutet. I like new challenges and are eager to learn more. I am now looking for an <strong>internship starting in September 2023 (25/09/23 - 1/12/23)</strong> 
-        where I can apply what I have learned during my education so far and improve my web development skills. <br>
-        I am based in Barcelona but open to work remotely worldwide. <br>
+        where I can apply what I have learned during my education so far and improve my web development skills. <br><br>
+        I am based in Barcelona but open to work remotely worldwide. <br><br>
         Feel free to contact me if you have any recommendation or internship offer!</p>
-        
+       
         <div class="tab-titles">
           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
           <p class="tab-links" onclick="opentab('education')">Education</p>
@@ -69,35 +97,38 @@
             <li><span>CSS</span></li>
             <li><span>Javascript</span></li>
             <li><span>Node.js</span></li>
-            <li><span>Express</span></li>
-            <li><span>Mongo DB</span></li>
             <li><span>Typescript</span></li>
+            <li><span>PHP</span></li>
+            <li><span>Wordpress</span></li>
+            <li><span>GitHub</span></li>
+            <li><span>React</span></li>
           </ul>
         </div>
         
         <div class="tab-contents" id="education">
           <ul>
             <li><span>Web developer in e-commerce at Medieinstitutet (Webbutvecklare inom e-handel) 09/2022 - 05/2024</span> <br>
-            ● Front and backend development, HTML5, CSS3, JavaScript, PHP, JSON and SQL <br>
+            ● Front and backend development<br>
             ● API development <br>
             ● Responsive web development<br>
             ● E-commerce systems<br>
             ● Payment systems, e-commerce business systems and logistics<br>
-            ● PHP</li>
+            </li>
           </ul>
         </div>
         
         <div class="tab-contents" id="cv">
-          <a href="https://www.cv-mallen.se/online-cv/ieszcvfpqclt/ieszcvfpqclt/" class="btn">Download my CV</a>
-        </div>
+          <a href="https://drive.google.com/file/d/1MuR5U5IheHODfoFMw21SV4gsaj3ptp1v/view?usp=sharing" class="btn">Download my CV</a>
+        </div> 
+        
       </div>
     </div>
   </div>
 </div>
 
 <!-- Projects -->
-<section class="sub-section-alternative" >
-  <h1 class="sub-title myprojects">My projects</h1>
+<section class="sub-section-alternative" id="projects" >
+  <h1 class="sub-title myprojects">My school projects</h1>
   <div class="project-container">
     
     <div class="project-card">
@@ -118,9 +149,26 @@
     <div class="project-card">
       <img class="project-image" src="img/tech store.png" alt="Project One Image"/>
       <h3>Tech Store - Group Project</h3>
-      <p class="subtext">Frontntend group project recreating a store from mockups using HTML; CSSS and Javascript.</p><hr/>
+      <p class="subtext">Frontntend group project recreating a store from mockups using HTML; CSS and Javascript.</p><hr/>
       <p class="subtext"><a class="project-link" href="https://isabellapresto.github.io/Tech-Store-Grupp-6/">Live demo</a></p>
       <p class="subtext"><a class="project-link" href="https://github.com/isabellapresto/Tech-Store-Grupp-6">GitHub</a></p>
+    </div>
+  </div>
+
+  <div class="project-container">
+    
+    <div class="project-card">
+      <img class="project-image" src="img/labb1.png" alt="Project One Image"/>
+      <h3>Creating a Wordpress theme</h3>
+      <p class="subtext">Converted static HTML code into a WordPress theme using PHP.</p><hr/>
+      <p class="subtext"><a class="project-link" href="https://github.com/isabellapresto/tema-Inl-mningsuppgift-1">GitHub</a></p>
+    </div>
+
+    <div class="project-card">
+      <img class="project-image" src="img/Wordpress.png" alt="Project One Image"/>
+      <h3>Wordpress</h3>
+      <p class="subtext">Created a online sports shop with a custom child-theme. </p><hr/>
+      <p class="subtext"><a class="project-link" href="https://github.com/isabellapresto/Sports-store-wordpress-childtheme">GitHub</a></p>
     </div>
     
     <div class="project-card">
@@ -128,14 +176,16 @@
       <h3>Calculator</h3>
       <p class="subtext">Calculator built using HTML, CSS and JavaScript.</p><hr/>
       <p class="subtext"><a class="project-link" href="https://isabellapresto.github.io/Calculator/">Live demo</a></p>
-      <p class="subtext"><a class="project-link" href="https://isabellapresto.github.io/Calculator/">GitHub</a></p>
+      <p class="subtext"><a class="project-link" href="https://github.com/isabellapresto/Calculator">GitHub</a></p>
     </div>
   
   </div>
+    
+</div>
 </section>
 
 <!-- contact -->
-<div class="contact-container">
+<div class="contact-container" id="contact">
 
   <div class="contact-left">
 
@@ -163,18 +213,7 @@
   </div>
 </div>
 
-<script>
-  var sidemeu = documet.getElementById("sidemenu");
 
-  
-
-function openmenu(){
- sidemeu.style.right = "0";
-}
-function closemenu(){
- sidemeu.style.right = "-200px";
-}
-</script>
 
 
 </body>
