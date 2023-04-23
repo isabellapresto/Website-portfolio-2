@@ -326,7 +326,7 @@ nav .fa-solid {
   }
 
   .sub-title{
-    font-size: 44px;
+    font-size: 33px;
   }
 
   .about-col-1, .about-col-2{
@@ -337,6 +337,15 @@ nav .fa-solid {
     margin-bottom: 30px;
   }
  
+  .contact-left p{
+    font-size: 12px;
+   }
+   
+   .contact-left p i{
+   
+    font-size: 12px;
+   }
+   
 
 
 }
@@ -349,6 +358,6 @@ nav .fa-solid {
    }
  }
     
-/* rosa #F08080; */
-/* röd #ff004f; */
+
+
 
